@@ -11,8 +11,7 @@
  * with multiple people dragging and dropping their characters to move them. This isn't enabled.
  * https://github.com/Shopify/draggable/issues/77
  */
-export default interface IDragHandler {
-
+export interface IDragHandler {
 	/**
 	 * Fired when an element or text selection is being dragged. Potentially continuous, and fires every "couple hundred of MS"
 	 * 

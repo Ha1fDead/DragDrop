@@ -6,7 +6,7 @@
  * 
  * These operations are specified by the DropHandler
  */
-export default interface IDropHandler {
+export interface IDropHandler {
 	/**
 	 * Determines if this DropHandler can handle any of the types within the string
 	 * @param types from the DragEvent DataTransfer that need to be handled

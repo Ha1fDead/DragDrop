@@ -1,5 +1,5 @@
 import { DraggableDropEffectsTypes } from "./dragdropdict";
-import IDropHandler from "./drophandler";
+import { IDropHandler } from "./drophandler";
 
 /**
  * Implies that "Dragged" events can be "Dropped" into this

@@ -6,6 +6,8 @@ export class DropContainer {
     HandleDragEnter(event) {
         const eligibleHandlers = this.FindEligibleDropHandlers(event);
         if (eligibleHandlers.length === 0) {
+            // There isn't a DragHandler that can handle this
+            // Thus, we prevent the Drag from firing
             event.preventDefault();
             return;
         }
@@ -16,6 +18,7 @@ export class DropContainer {
         event.preventDefault();
     }
     HandleDragLeave(event) {
+        // After an Event leaves a DropContainer, we ALWAYS want to set the DropEffect to "None"
         event.dataTransfer.dropEffect = DraggableDropEffectsTypes.None;
         const eligibleHandlers = this.FindEligibleDropHandlers(event);
         if (eligibleHandlers.length === 0) {
@@ -38,6 +41,7 @@ export class DropContainer {
         event.preventDefault();
     }
     HandleDrop(event) {
+        // prevent click / touch / pointer events
         event.preventDefault();
         const eligibleHandlers = this.FindEligibleDropHandlers(event);
         if (eligibleHandlers.length === 0) {
