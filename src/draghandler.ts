@@ -41,10 +41,11 @@ export interface IDragHandler {
 	/**
 	 * Fired when the user starts dragging an element or text selection. (See Starting a Drag Operation.)
 	 * 
-	 * This method should set the "DataTransfer" and EffectAllowed types on the event.DataTransfer object\
+	 * This method should set the "DataTransfer" and EffectAllowed types on the event.DataTransfer object
 	 * 
 	 * Behavior:
 	 * - Does not fire from system-level drags (e.g. desktop files)
+	 * - If you do not prevent the event, drag over and drag events will continue to be fired from it
 	 */
 	HandleDragStart(event: DragEvent): void;
 }
