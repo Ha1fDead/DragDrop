@@ -10,6 +10,10 @@
  * Multi-Drag is not currently supported. Imagine a large touch-enabled device at a table, 
  * with multiple people dragging and dropping their characters to move them. This isn't enabled.
  * https://github.com/Shopify/draggable/issues/77
+ * 
+ * Note:
+ * 
+ * For HTML elements, don't forget to set "draggable=true" to enable dragging
  */
 export interface IDragHandler {
 	/**
@@ -37,7 +41,7 @@ export interface IDragHandler {
 	/**
 	 * Fired when the user starts dragging an element or text selection. (See Starting a Drag Operation.)
 	 * 
-	 * This method should set the "DataTransfer" and EffectAllowed types on the event.DataTransfer object
+	 * This method should set the "DataTransfer" and EffectAllowed types on the event.DataTransfer object\
 	 * 
 	 * Behavior:
 	 * - Does not fire from system-level drags (e.g. desktop files)
