@@ -14,6 +14,10 @@
  * Note:
  * 
  * For HTML elements, don't forget to set "draggable=true" to enable dragging
+ * 
+ * Behaviors:
+ * - All "Drag Handlers" event position is the position of the original drag
+ * - To view position of where the element has been "Dragged" to, you must use "Drop Handlers"
  */
 export interface IDragHandler {
 	/**
