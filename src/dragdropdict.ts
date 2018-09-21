@@ -1,5 +1,5 @@
 /**
- * Enum representing all of the types for "effectAllowed" properties on DataTransfer object
+ * Enum representing all of the types for "dropEffect" properties on DataTransfer object
  */
 export enum DraggableDropEffectsTypes {
 	/**
@@ -26,7 +26,7 @@ export enum DraggableDropEffectsTypes {
 }
 
 /**
- * Set from the "Draggable" element, and indicates what operations this Element is permitted
+ * Set from the "Draggable" element, and indicates what operations this Element is permitted. This is for "effectAllowed" properties
  */
 export enum DraggableEffectAllowedTypes {
 	/**
